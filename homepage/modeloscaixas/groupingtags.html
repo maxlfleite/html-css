@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+</head>
+<style>
+body {  
+    background-color: #F2B680;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+header {
+    padding: 10px;
+    background-color: #F2F2F2;
+    margin: 10px;
+}
+main {
+    background-color: #F2F2F2;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.39);
+}
+article {
+    background-color: #f2b5809c;
+    padding: 5px;
+}
+article > aside {
+    background-color: #d8a272d7;
+}
+footer {
+    margin: 0px;
+    text-align: center;
+    padding: 4px;
+    background-color: #9C8BD9;
+    color: #F2F2F2;
+}
+footer > p{
+    margin: 0px;
+}
+nav {
+    background-color: #9C8BD9;
+    padding: 3px;
+    box-shadow: 3px 5px 3px 1px rgba(0, 0, 0, 0.301);
+}
+nav > a {
+    text-decoration: none;
+    color: #F2F2F2;
+    font-weight: bold;
+    margin-right: 30px;
+}
+nav > a:hover {
+    text-decoration: underline;
+}
+div#bola {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+}
+</style>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <hr>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Futebol Política Religião</p>
+        </section>
+        
+        <section id="noticias">
+            <article>
+                <h2>Noticias da Clínica</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <aside>
+                    <p>Artigo escrito por Maria Joaquina</p>
+                </aside>
+            </article>
+        </section>
+        <article>
+
+        </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por Max Leite</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "utf-8";
+body {
+    background-color: #B22727;
+    color: #F8CB2E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; line-height: 1.5;
+
+}
+.section {
+    background-color: tomato;
+    padding: 20px
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.box {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+p {
+    font-size: 18px;
+}

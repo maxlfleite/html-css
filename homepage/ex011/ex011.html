@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>Mídias em HTML5</title>
+</head>
+<body class="container">
+    <h1>Imagens Dinâmicas</h1>
+    <hr>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto-g">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <p>Limão com Mel - Quando a noite chegar</p>
+    <audio src="midia/quando-a-noite-chegar.mp3" controls></audio>
+    <p>Limão com Mel - Vivendo de solidão</p>
+    <audio preload="metadata" controls>
+        <source src="midia/vivendo-de-solidao.mp3" type="audio/mpeg">
+        <source src="midia/vivendo-de-solidao.ogg" type="audio/ogg">
+        <source src="midia/vivendo-de-solidao.wav" type="audio/wav">
+        <!-- Audio em wav são grandes demais e não recomendados para sites. -->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/vivendo-de-solidao.mp3">Clique aqui</a> para baixar o arquivo .mp3</p>
+    </audio>
+    <h1>Videos com HTML5</h1>
+    <hr>
+    <p>Inserindo vídeos no meu proprio servidor.</p>
+    <video preload="metadata" src="videos/cat-video-540.mp4" width="500" poster="imagens/cat-thumb.png" controls>
+        <!-- Da mesma forma que o áudio, é importante colocar todos os tipos de videos suportados para que navegadores diferentes tenham acesso ao vídeo. O modo de colocar é o mesmo do áudio.-->
+    </video>
+    <p>Inserindo vídeos do Youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QSL_2Zorp04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <p>Inserindo vídeos do Vimeo</p>
+    <iframe src="https://player.vimeo.com/video/499070329?h=72ddd5a1ea" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/499070329">Bionic Cat</a> from <a href="https://vimeo.com/user34684248">CrazyFunnyCats #crazyfunnycats66</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+    <a href="../index.html">Voltar para página inicial.</a>
+
+
+</body>
+</html>
