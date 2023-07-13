@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Simples</title>
+</head>
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    table {
+        border-collapse: collapse;
+        width: 400px;
+        height: 400px;
+    }
+    tr {
+        background-color: brown;
+    }
+    tr.par {
+        background-color: goldenrod;
+    }
+    td{
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+        vertical-align: top; /* o padrão é 'middle' */
+        color: white;
+        font-weight: bolder;
+    }
+    .numero{
+        text-align: right;
+    }
+</style>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <hr>
+    <!-- 
+            Hierarquia de Tabelas Simples
+            TABLE = tabela
+                TABLE ROW = linha da tabela
+                TABLE DATA = dado da tabela
+                
+        -->
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td class="numero">C1</td>
+        </tr>
+        <tr class="par">
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <tr class="par">
+            <td>A4</td>
+            <td>B4</td>
+            <td class="numero">C4</td>
+        </tr>
+    </table>
+</body>
+</html>
