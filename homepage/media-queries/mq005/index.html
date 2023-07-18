@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/mq.css">
     <title>Menu Hamburguer</title>
 </head>
-<body onresize="mudouTamanho">
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
@@ -34,10 +34,10 @@
     </main>
     <script>
         function mudouTamanho() {
-            if (widow.innerWidth >= 768) {
-                itens.style.display = 'block';
-            } else{
-                itens.style.display = 'none';
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
             }
         }
         function clickMenu() {
